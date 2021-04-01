@@ -95,6 +95,6 @@ Change the git hook so that it now uses `lint-staged`.
   }
 },
 "lint-staged": {
-  "src/**/*.ts": "eslint && jest --findRelatedTests"
+  "src/**/*.ts": "jest --findRelatedTests"
 }
 ```
