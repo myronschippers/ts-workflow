@@ -17,7 +17,7 @@ $ npm install --save-dev jest @types/jest ts-jest
 Create **jest** configuration file `jest.config.js`.
 
 ```js
-module.exports = {
+export default {
   "roots": [
     "<rootDir>/src"
   ],
@@ -38,6 +38,20 @@ Add a run script to the `package.json`.
   //...
   "test": "jest"
 },
+```
+
+In order to run **jest** use `npm run test`. But this will not allow the test to run without any tests being detected. If the `jest --passWithNoTests` option is added then it will run without a test written.
+
+For Node to use es6 modules while running **jest** add `"type": "module",` to the `package.json`.
+
+Now write your first test with a file name like `sum.test.ts` or `sum.spec.ts`. For example...
+
+```js
+import sum from './sum';
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
 ```
 
 ## Setup Tests to Run on Commit
