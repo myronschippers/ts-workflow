@@ -1,5 +1,5 @@
-import sum from './modules/sum';
-import randomNumber from './modules/randomNumber';
+import sum from './modules/sum/sum';
+import randomNumber from './modules/randomNumbers/randomNumber';
 
 console.log('Hello World');
 console.log('SUM 2 + 5:', sum(2, 5));
