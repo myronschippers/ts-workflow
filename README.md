@@ -31,6 +31,17 @@ module.exports = {
 };
 ```
 
+Add a run script to the `package.json`.
+
+```json
+"scripts": {
+  //...
+  "test": "jest"
+},
+```
+
+## Setup Tests to Run on Commit
+
 ```bash
 $ npm install --save-dev husky
 ```
