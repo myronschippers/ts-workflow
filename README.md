@@ -31,12 +31,26 @@ export default {
 };
 ```
 
+```js
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+};
+```
+
 Add a run script to the `package.json`.
 
 ```json
 "scripts": {
   //...
   "test": "jest"
+},
+```
+
+```json
+"scripts": {
+  //...
+  "test": "npx jest"
 },
 ```
 
